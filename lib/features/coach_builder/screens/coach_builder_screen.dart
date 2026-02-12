@@ -60,6 +60,15 @@ class _CoachBuilderScreenState extends State<CoachBuilderScreen> {
   }
 
   @override
+  void dispose() {
+    _nameController.dispose();
+    _titleController.dispose();
+    _promptController.dispose();
+    _expertiseController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
