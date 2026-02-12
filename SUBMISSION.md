@@ -3,7 +3,7 @@
 ## Brief: Simon @BetterCreating — AI Coaching App
 
 ## Tagline
-"Your AI coaching team that actually knows you."
+"11 Coaches. One You. Zero Excuses.."
 
 ## The Problem
 Coaching is expensive ($150-500/session), inaccessible, and one-size-fits-all. Most people who need coaching can't afford it. Those who try AI chatbots get generic, forgettable responses with zero continuity.

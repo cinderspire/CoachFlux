@@ -2,7 +2,7 @@
 
 ## Project Title
 
-**CoachFlux — Your AI Coaching Team That Actually Knows You**
+**CoachFlux — 11 Coaches. One You. Zero Excuses.**
 
 ## Tagline
 
