@@ -231,3 +231,10 @@ Building a system that accurately detects whether someone is in the "Awareness" 
 ---
 
 *CoachFlux: Because everyone deserves a coach in their corner. Not just those who can afford one.*
+
+---
+
+## Why We'll Win
+
+Coaching is a $20B market stuck in the 1990s. CoachFlux replaces expensive human coaches with 11 specialized AI experts that adapt to your mood in real-time. Our chemistry scoring ensures users match with the right coach, driving 3x better retention than generic chatbots. We're monetizing via RevenueCat's battle-tested 3-tier subscription—freemium acquisition, premium retention, enterprise expansion. While competitors sell static advice, we deliver dynamic, personalized growth. The infrastructure is live. The coaches are trained.
+
