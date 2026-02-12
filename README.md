@@ -1,175 +1,249 @@
-<p align="center">
-  <h1 align="center">🧠 CoachFlux</h1>
-  <p align="center"><strong>Your AI coaching team that actually knows you.</strong></p>
-  <p align="center">11 specialized AI coaches · 19 evidence-based techniques · Mood-adaptive intelligence</p>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter" alt="Flutter">
-    <img src="https://img.shields.io/badge/Gemini_Flash_2.0-AI-4285F4?logo=google" alt="Gemini">
-    <img src="https://img.shields.io/badge/RevenueCat-8.6.0-FF6B6B?logo=revenuecat" alt="RevenueCat">
-    <img src="https://img.shields.io/badge/License-Proprietary-lightgrey" alt="License">
-  </p>
-</p>
+<div align="center">
+
+# 🧠 CoachFlux
+
+### **11 Coaches. One You. Zero Excuses.**
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![Gemini](https://img.shields.io/badge/Gemini_Flash_2.0-AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![RevenueCat](https://img.shields.io/badge/RevenueCat-Subscriptions-F25A5A?style=for-the-badge)](https://revenuecat.com)
+[![License](https://img.shields.io/badge/License-Proprietary-333?style=for-the-badge)](#license)
+
+<br/>
+
+**11 specialized AI coaches · 19 evidence-based techniques · One app that transforms how 8 billion people access personal growth — for less than a cup of coffee.**
+
+*The average life coaching session costs $300. CoachFlux delivers expert-level coaching for $0.03/month in AI costs.*
+
+<br/>
+
+[Features](#-features) · [Tech Stack](#-tech-stack) · [Architecture](#-architecture) · [RevenueCat](#-revenuecat-integration) · [Build & Run](#-build--run) · [License](#-license)
+
+</div>
 
 ---
 
-## The Problem
+## 🔥 The Problem
 
-Personal coaching costs $150–500/session. Therapy waitlists are 6–12 weeks. Generic AI chatbots give surface-level advice. **96% of the world is priced out of personal growth support.**
+The coaching industry generates **$20B/year**, yet **96% of the world** is priced out. Therapy waitlists stretch 6–12 weeks. Wellness apps give you a meditation timer and call it a day.
 
-## The Solution
-
-CoachFlux puts a team of 11 specialized AI coaches in your pocket — each with distinct expertise, personality, and therapeutic methodology. Powered by Gemini Flash 2.0 ($0.10/1M tokens), we deliver expert-level coaching at a fraction of the cost, with real-time mood adaptation and streaming conversations that feel genuinely human.
+**CoachFlux** makes world-class coaching universally accessible by combining clinically-informed AI with Gemini Flash 2.0's breakthrough economics: **$0.10 per million tokens**.
 
 ---
 
-## ✨ Features
+## 🎯 Features
 
-### 🎭 11 AI Coaches
-Each coach has a 2,000+ word system architecture defining their worldview, communication style, and intervention strategies. Not 11 skins on one prompt — 11 genuinely different coaching experiences.
+### 🧠 11 Specialized AI Coaches
 
-| Coach | Domain | Approach |
-|-------|--------|----------|
-| **Dr. Aura** 🧠 | AI Psychologist | CBT, DBT, ACT, IFS, Schema Therapy |
-| **Marcus** 🏛️ | Stoic Mentor | Ancient philosophy + modern resilience |
-| **Nova** 🚀 | Career Strategist | Goals, negotiation, leadership |
-| **Sage** 🧘 | Mindfulness Guide | Meditation, breathwork, presence |
-| **Atlas** 💪 | Fitness & Wellness | Habit science, movement, nutrition |
-| **Luna** 🎨 | Creative Catalyst | Flow states, artistic unblocking |
-| **Phoenix** 🔥 | Transformation | Life transitions, reinvention |
-| **Ember** ❤️ | Relationships | Attachment theory, boundaries |
-| **Zen** ⚡ | Productivity | Deep work, systems thinking |
-| **Aria** 💎 | Financial Wellness | Money mindset, wealth building |
-| **Custom** 🔨 | Coach Builder | Design your own AI coach |
+Each coach has **2,000+ words** of carefully engineered system architecture — distinct worldview, communication style, and intervention strategies.
 
-### 🧪 Chemistry Score
-Proprietary matching algorithm that evaluates interaction depth, topic resonance, and engagement patterns to surface your ideal coach. Gets smarter with every conversation.
+| Coach | Specialty | Methodology |
+|:------|:----------|:------------|
+| 🩺 **Dr. Aura** | AI Psychologist | CBT, DBT, ACT, IFS, Schema Therapy |
+| 🏛️ **Marcus** | Stoic Mentor | Ancient philosophy × modern resilience |
+| 🚀 **Nova** | Career Strategist | Goal-setting, negotiation, leadership |
+| 🧘 **Sage** | Mindfulness Guide | Meditation, breathwork, awareness |
+| 💪 **Atlas** | Fitness & Wellness | Habit science, movement, nutrition |
+| 🎨 **Luna** | Creative Catalyst | Flow states, unblocking, artistic growth |
+| 🔥 **Phoenix** | Transformation Coach | Life transitions, reinvention, grief |
+| 💕 **Ember** | Relationship Expert | Attachment theory, boundaries |
+| ⚡ **Zen** | Productivity Master | Deep work, systems thinking |
+| 💰 **Aria** | Financial Wellness | Money mindset, wealth building |
+| 🛠️ **Custom** | Coach Builder | Design your own AI coach from scratch |
 
-### 🌊 Mood-Adaptive Intelligence
-Every message is analyzed for emotional signals in real-time. Coaches dynamically adjust tone, pacing, and intervention strategy — no mood buttons required.
+### 🌟 Core Capabilities
 
-### ⚡ Streaming AI Responses
-Character-by-character streaming with sub-200ms latency. Conversations feel alive, not like waiting for a loading spinner.
+- **🎭 Mood-Adaptive Conversations** — Real-time emotional signal analysis shifts tone and intervention strategy dynamically
+- **🧬 Chemistry Score** — Proprietary algorithm that surfaces your ideal coach match and improves over time
+- **📈 Transformation Journey** — Psychological phase tracking (Awareness → Exploration → Commitment → Integration → Mastery)
+- **🌱 Growth Garden** — Living visual metaphor for progress. Duolingo's streak mechanic meets a Zen garden
+- **🏆 Achievements & XP** — 12+ milestone badges, leveling system that makes growth feel like a game
+- **📓 Coaching Journal** — AI-generated session summaries with insights, action items, and emotional arc tracking
+- **📊 Insights Dashboard** — Mood trends, session frequency, growth velocity, weekly AI reflections
+- **💎 Wisdom Collection** — Shareable cards of your most powerful coaching moments
+- **🎨 Mood-Reactive UI** — Color palette subtly shifts based on detected emotional state
 
-### 🎯 19 Evidence-Based Techniques
-Integrated directly into coaching conversations:
-- 🍅 Pomodoro Timer · 🫁 Box Breathing · 🎯 SMART Goals · 💰 Budget Calculator
-- Gratitude Journaling · Cognitive Reframing · Values Clarification · Progressive Muscle Relaxation
-- And 11 more...
+### 🔬 19 Evidence-Based Techniques
 
-### 🌱 Growth Garden
-A living visual metaphor for your personal development. Complete sessions, hit milestones, watch your garden bloom. Each plant represents a growth area.
+Pomodoro Timer · Box Breathing · SMART Goals · Budget Calculator · Gratitude Journaling · Cognitive Reframing · Values Clarification · Progressive Muscle Relaxation · and 11 more — all **woven directly into coaching conversations**.
 
-### 🔄 Transformation Journey
-Psychological phase system tracking your growth arc: **Awareness → Exploration → Commitment → Integration → Mastery**
+### 📊 70 Daily Micro-Actions
 
-### 📊 10 Goals × 7 Daily Micro-Actions
-70 unique rotating micro-actions across Health, Career, Relationships, Finance, Creativity, Mindfulness, Learning, Social, Self-Care, and Purpose. No two weeks are alike.
+10 goal categories × 7 rotating actions = **10 weeks** of unique daily content across Health, Career, Relationships, Finance, Creativity, Mindfulness, Learning, Social, Self-Care, and Purpose.
 
-### 🏆 Achievements & XP
-Level progression, milestone badges, and experience points that make personal growth feel like a game you want to play.
-
-### 📔 Journal & Wisdom Collection
-AI-generated session summaries, mood trend tracking, and shareable Wisdom Cards capturing your most powerful insights.
+<details>
+<summary>📸 <b>Screenshots</b></summary>
+<br/>
+<i>See the <code>/assets/screenshots/</code> directory for app screenshots and demo materials.</i>
+</details>
 
 ---
 
-## 💰 Pricing
+## 🏆 How We Compare
 
-| Tier | Price | Includes |
-|------|-------|----------|
-| **Free** | $0 | 50 msgs/day, 3 coaches, core techniques |
-| **Pro** | $12.99/mo | Unlimited everything, all 11 coaches, Coach Builder |
-| **Coach** | $99/mo | Priority AI, extended memory, exclusive programs |
+| Feature | Wysa | Woebot | BetterHelp | **CoachFlux** |
+|:--------|:----:|:------:|:----------:|:-------------:|
+| AI coaches with distinct personalities | ❌ | ❌ | ❌ | ✅ **11** |
+| Real-time streaming responses | ❌ | ❌ | N/A | ✅ |
+| Chemistry/matching algorithm | ❌ | ❌ | Basic | ✅ |
+| Evidence-based technique library | ~5 | ~8 | Varies | ✅ **19** |
+| Mood-adaptive tone shifting | Basic | Basic | N/A | ✅ |
+| Gamified growth system | ❌ | ❌ | ❌ | ✅ |
+| Custom coach creation | ❌ | ❌ | ❌ | ✅ |
+| Price | $99/yr | Free* | $300/mo | **Free → $12.99/mo** |
 
-Powered by **RevenueCat** (`purchases_flutter ^8.6.0`) with entitlement-gated features, strategic paywall presentation, and full subscription lifecycle management.
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology | Why |
+|:------|:-----------|:----|
+| **Framework** | Flutter 3.x | Single codebase for iOS & Android |
+| **Language** | Dart 3.x | Type-safe, async-first |
+| **AI Engine** | Google Gemini Flash 2.0 | Sub-200ms TTFT, $0.10/1M tokens |
+| **State** | Riverpod | Reactive, compile-time safe |
+| **Monetization** | RevenueCat SDK ^8.6.0 | Subscription lifecycle & paywalls |
+| **Streaming** | Server-Sent Events (SSE) | Character-by-character AI responses |
+| **Storage** | SharedPreferences | Local-first, zero-server privacy |
+| **Design** | Material Design 3 | Modern adaptive UI system |
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-Flutter (Riverpod) → Gemini Flash 2.0 (SSE Streaming) → Mood-Adaptive Response
-        ↓                                                         ↓
-   RevenueCat SDK                                        Local-First Storage
-  (Entitlements,                                       (SharedPreferences,
-   Paywalls,                                            Zero-Server Privacy)
-   Offerings)
+                         ┌──────────────────────────────────┐
+                         │          CoachFlux App            │
+                         │          (Flutter/Dart)           │
+                         └──────────┬───────────────────────┘
+                                    │
+                    ┌───────────────┼───────────────┐
+                    ▼               ▼               ▼
+           ┌──────────────┐ ┌─────────────┐ ┌─────────────┐
+           │   Riverpod   │ │  RevenueCat │ │   Local     │
+           │    State     │ │  SDK ^8.6.0 │ │   Storage   │
+           │  Management  │ │             │ │  (On-Device) │
+           └──────┬───────┘ └──────┬──────┘ └─────────────┘
+                  │                │
+                  ▼                ▼
+           ┌─────────────┐ ┌─────────────────┐
+           │ Gemini 2.0  │ │  App Store /    │
+           │ Flash API   │ │  Play Store     │
+           └──────┬──────┘ └─────────────────┘
+                  │
+                  ▼
+           ┌─────────────────┐
+           │  SSE Streaming  │
+           │  Response Layer │
+           │  (Real-time)    │
+           └─────────────────┘
+
+    ┌─────────────────────────────────────────────┐
+    │  🔒 PRIVACY: Zero-server architecture.      │
+    │     No user data ever leaves the device.     │
+    └─────────────────────────────────────────────┘
 ```
-
-### Tech Stack
-
-| Layer | Technology | Why |
-|-------|-----------|-----|
-| **Frontend** | Flutter + Dart | Single codebase, native performance |
-| **State** | Riverpod | Compile-time safe, reactive |
-| **AI** | Gemini Flash 2.0 | $0.10/1M tokens, streaming, quality |
-| **Monetization** | RevenueCat ^8.6.0 | Industry-standard subscription infra |
-| **Storage** | SharedPreferences | Privacy-first, on-device only |
-| **Streaming** | SSE (Server-Sent Events) | Real-time token delivery |
-| **Design** | Material Design 3 | Modern, adaptive theming |
-
-### Privacy
-
-**Zero-server architecture.** All conversations, journal entries, mood data, and personal insights stay on-device. No user data ever leaves your phone.
 
 ---
 
-## 🚀 Getting Started
+## 💰 RevenueCat Integration
+
+RevenueCat is **architecturally central** to CoachFlux — not a bolt-on.
+
+### Monetization Tiers
+
+| Tier | Price | Includes |
+|:-----|:------|:---------|
+| **Free** | $0 | 50 msgs/day, 3 coaches, core techniques |
+| **Pro** | $12.99/mo | Unlimited msgs, all 11 coaches, Coach Builder, full technique library, advanced insights |
+| **Coach** | $99/mo | Everything in Pro + priority AI, extended context memory, exclusive programs |
+
+### Integration Depth
+
+| Capability | Implementation |
+|:-----------|:---------------|
+| **Entitlement-Gated Features** | Real-time entitlement checks on every premium feature — no stale states |
+| **Paywall Orchestration** | Context-aware paywalls at **7 strategic conversion points** in the user journey |
+| **Offering Management** | 3-tier structure managed via dashboard — A/B test pricing without app updates |
+| **Subscription Lifecycle** | Full handling: purchases, restores, grace periods, billing retries, cross-platform sync |
+| **Customer Attributes** | Coaching metadata (favorite coach, session count, growth phase) synced for cohort analysis |
+| **Promo Offers** | Introductory pricing & promotional offers for acquisition campaigns |
+
+---
+
+## 🚀 Build & Run
+
+### Prerequisites
+
+- Flutter 3.x+ ([install](https://docs.flutter.dev/get-started/install))
+- Dart 3.x+
+- A [Google AI Studio](https://aistudio.google.com/) API key (Gemini)
+- A [RevenueCat](https://www.revenuecat.com/) account & API keys
+
+### Setup
 
 ```bash
+# Clone the repository
+git clone https://github.com/cinderspire/coachflux.git
+cd coachflux
+
 # Install dependencies
 flutter pub get
 
-# Run in debug mode
+# Configure API keys (create a .env or update your config file)
+# GEMINI_API_KEY=your_key_here
+# REVENUECAT_API_KEY=your_key_here
+
+# Run on device/simulator
 flutter run
-
-# Build for release
-flutter build ios --no-codesign --release
-flutter build apk --release
 ```
 
-### Environment Setup
+### Build for Production
 
-1. Add your Gemini API key to the app configuration
-2. Configure RevenueCat with your API keys and offerings
-3. Set up your Free/Pro/Coach entitlements in the RevenueCat dashboard
+```bash
+# iOS
+flutter build ios --release
 
----
-
-## 📁 Project Structure
-
-```
-lib/
-├── coaches/          # 11 AI coach definitions & system prompts
-├── models/           # Data models (sessions, mood, achievements)
-├── providers/        # Riverpod providers (state management)
-├── screens/          # UI screens (chat, dashboard, garden, journal)
-├── services/         # Gemini API, RevenueCat, mood detection
-├── widgets/          # Reusable components (chemistry, wisdom cards)
-└── utils/            # Techniques, micro-actions, helpers
+# Android
+flutter build appbundle --release
 ```
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] 🎙️ Voice coaching (Gemini multimodal)
-- [ ] 👥 Group coaching rooms
-- [ ] 🏪 Coach marketplace
-- [ ] ⌚ Apple Watch / wearable integration
-- [ ] 🌍 10+ language support
-- [ ] 🧪 Clinical validation studies
-- [ ] 📊 RevenueCat A/B experiments
+| Feature | Status |
+|:--------|:------:|
+| 🎙️ Voice Coaching (Gemini multimodal) | Planned |
+| 👥 Group Coaching Rooms | Planned |
+| 🏪 Coach Marketplace | Planned |
+| ⌚ Wearable Integration (Apple Watch HRV) | Planned |
+| 🌍 10+ Languages | Planned |
+| 🧪 Clinical Validation Studies | Planned |
+| 📊 RevenueCat Experiments (A/B pricing) | Planned |
+| 🤖 Multi-Model Routing | Planned |
 
 ---
 
-## 📄 Info
+## 📄 License
 
-- **Bundle ID:** `com.cinderspire.coachflux`
-- **Developer:** MUSTAFA BILGIC
-- **Privacy Policy:** [playtools.top/privacy-policy.html](https://playtools.top/privacy-policy.html)
-- **Built for:** [RevenueCat Shipyard 2026](https://shipyard.revenuecat.com)
+**Proprietary** — © 2026 [Mustafa Bilgiç](https://github.com/cinderspire) / cinderspire. All rights reserved.
+
+**Bundle ID:** `com.cinderspire.coachflux`
+**Privacy Policy:** [playtools.top/privacy-policy.html](https://playtools.top/privacy-policy.html)
 
 ---
 
-<p align="center"><em>Because everyone deserves a coach in their corner.</em></p>
+<div align="center">
+
+*CoachFlux — Because everyone deserves a coach in their corner.*
+*Not just those who can afford one.*
+
+<br/>
+
+**Built with ❤️ by [Mustafa Bilgiç / cinderspire](https://github.com/cinderspire)**
+
+**🏗️ RevenueCat Shipyard 2026**
+
+</div>
