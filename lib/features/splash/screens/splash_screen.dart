@@ -159,7 +159,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 children: [
                   // Animated logo: stroke → fill
                   Semantics(
-                    label: 'CoachFlux logo',
+                    label: 'AI CoachFlux logo',
                     child: SizedBox(
                       width: 100,
                       height: 100,
@@ -178,7 +178,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   ),
                   const SizedBox(height: 28),
 
-                  // Title: "CoachFlux"
+                  // Title: "AI CoachFlux"
                   FadeTransition(
                     opacity: CurvedAnimation(parent: _textCtrl, curve: Curves.easeOut),
                     child: SlideTransition(
@@ -187,7 +187,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                         end: Offset.zero,
                       ).animate(CurvedAnimation(parent: _textCtrl, curve: Curves.easeOutCubic)),
                       child: Text(
-                        'CoachFlux',
+                        'AI CoachFlux',
                         style: AppTextStyles.headlineLarge.copyWith(
                           color: AppColors.textPrimaryDark,
                           fontWeight: FontWeight.bold,
@@ -246,7 +246,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   }
 }
 
-/// Custom painter that draws the CoachFlux logo:
+/// Custom painter that draws the AI CoachFlux logo:
 /// A rounded square with a lightning bolt inside.
 /// Phase 1: stroke draws itself. Phase 2: fills with gradient.
 class _LogoPainter extends CustomPainter {

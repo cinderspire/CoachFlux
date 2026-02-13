@@ -387,7 +387,7 @@ class ContinuityEngine {
     final week = phase.currentWeek;
 
     if (log.isEmpty) {
-      return 'Your CoachFlux journey begins now. You\'re in the ${phase.name} '
+      return 'Your AI CoachFlux journey begins now. You\'re in the ${phase.name} '
           'phase — a time for ${phase.description.toLowerCase()} '
           'Start your first session whenever you\'re ready.';
     }
@@ -429,7 +429,7 @@ class ContinuityEngine {
     final weekLabel = week == 1 ? '1 week' : '$week weeks';
 
     final buffer = StringBuffer()
-      ..write('In $weekLabel with CoachFlux, you\'ve had $totalSessions ')
+      ..write('In $weekLabel with AI CoachFlux, you\'ve had $totalSessions ')
       ..write('session${totalSessions == 1 ? '' : 's'} across ${coaches.length} ')
       ..write('coach${coaches.length == 1 ? '' : 'es'}. ')
       ..write('Your average mood shifted from $avgBefore to $avgAfter. ');

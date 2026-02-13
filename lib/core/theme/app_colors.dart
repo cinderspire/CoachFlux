@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// CoachFlux Color Palette - Modern Energizing Theme
+/// AI CoachFlux Color Palette - Modern Energizing Theme
 /// Premium, vibrant, human-centered design.
 class AppColors {
   AppColors._();

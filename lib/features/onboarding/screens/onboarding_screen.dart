@@ -224,7 +224,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Semantics(
-            label: 'CoachFlux logo',
+            label: 'AI CoachFlux logo',
             child: Container(
               width: 120,
               height: 120,
@@ -244,7 +244,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
             ),
           ),
           const SizedBox(height: 40),
-          Text('Welcome to\nCoachFlux',
+          Text('Welcome to\nAI CoachFlux',
             textAlign: TextAlign.center,
             style: AppTextStyles.displaySmall.copyWith(
               color: AppColors.textPrimaryDark,

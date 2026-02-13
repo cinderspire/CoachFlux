@@ -192,7 +192,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const ProblemAssessmentScreen(isReassessment: true)));
               }),
-              _actionTile(Icons.info_outline_rounded, 'About CoachFlux', () {
+              _actionTile(Icons.info_outline_rounded, 'About AI CoachFlux', () {
                 Navigator.pushNamed(context, '/settings');
               }),
               const SizedBox(height: 24),

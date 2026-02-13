@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // ═══════════════════════════════════════════════════════════════
-// PROBLEM ENGINE — CoachFlux Problem Detection & Solution Mapping
+// PROBLEM ENGINE — AI CoachFlux Problem Detection & Solution Mapping
 // ═══════════════════════════════════════════════════════════════
 
 enum ProblemCategory {
@@ -733,7 +733,7 @@ final List<ProblemDefinition> allProblems = [
       const MicroAction(time: 'evening', action: 'Write one safe, positive memory — build your "safety file"'),
     ],
     timeline: 'Grounding tools work immediately. Trauma processing is a longer journey — we walk it with you.',
-    uniqueApproach: 'We go slowly. We prioritize SAFETY above everything. Dr. Aura creates a safe space, ZenMind regulates your nervous system. We never push faster than you\'re ready. ⚠️ For severe trauma, we strongly recommend working with a human therapist alongside CoachFlux.',
+    uniqueApproach: 'We go slowly. We prioritize SAFETY above everything. Dr. Aura creates a safe space, ZenMind regulates your nervous system. We never push faster than you\'re ready. ⚠️ For severe trauma, we strongly recommend working with a human therapist alongside AI CoachFlux.',
   ),
 
   // ── 10. PURPOSE ──

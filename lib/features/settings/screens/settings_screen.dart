@@ -72,7 +72,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SizedBox(height: 12),
           _navTile(
             icon: Icons.info_outline,
-            title: 'About CoachFlux',
+            title: 'About AI CoachFlux',
             onTap: () => _showAbout(context),
           ),
           const SizedBox(height: 40),
@@ -169,7 +169,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   void _showAbout(BuildContext context) {
     showAboutDialog(
       context: context,
-      applicationName: 'CoachFlux',
+      applicationName: 'AI CoachFlux',
       applicationVersion: '1.0.0 (Build 1)',
       applicationIcon: Container(
         width: 56,
@@ -183,12 +183,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       children: [
         const SizedBox(height: 8),
         Text(
-          'AI Coaching, Your Way.\n\nCoachFlux helps you grow with personalized AI coaching across productivity, mindset, health, career, creativity, and finance.',
+          'AI Coaching, Your Way.\n\nAI CoachFlux helps you grow with personalized AI coaching across productivity, mindset, health, career, creativity, and finance.',
           style: AppTextStyles.bodySmall.copyWith(color: AppColors.textSecondaryDark),
         ),
         const SizedBox(height: 16),
         Text(
-          '© 2026 CoachFlux. All rights reserved.',
+          '© 2026 AI CoachFlux. All rights reserved.',
           style: AppTextStyles.caption.copyWith(color: AppColors.textTertiaryDark),
         ),
       ],

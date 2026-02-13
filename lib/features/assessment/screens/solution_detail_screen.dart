@@ -89,9 +89,9 @@ class SolutionDetailScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
 
-                  // CoachFlux approach
+                  // AI CoachFlux approach
                   _buildSection(
-                    '✨ The CoachFlux Approach',
+                    '✨ The AI CoachFlux Approach',
                     info.coachFluxApproach,
                     info.color,
                   ),

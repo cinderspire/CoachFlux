@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../constants/app_constants.dart';
+import 'remote_config_service.dart';
 import '../models/coach.dart';
 import '../models/message.dart';
 import 'goal_service.dart';
@@ -23,11 +24,22 @@ class GeminiService {
   GeminiService._();
 
   final String _baseUrl = AppConstants.geminiBaseUrl;
-  String _apiKey = AppConstants.geminiApiKey;
+  late final List<String> _apiKeys = List.from(RemoteConfigService().geminiApiKeys);
+  int _currentKeyIndex = 0;
+
+  String get _apiKey => _apiKeys[_currentKeyIndex];
 
   final Map<String, _CacheEntry> _cache = {};
 
-  void setApiKey(String key) => _apiKey = key;
+  void setApiKey(String key) {
+    _apiKeys[0] = key;
+    _currentKeyIndex = 0;
+  }
+
+  void _rotateKey() {
+    _currentKeyIndex = (_currentKeyIndex + 1) % _apiKeys.length;
+    debugPrint('Gemini: rotated to key index $_currentKeyIndex');
+  }
 
   String _cacheKey(String coachId, String message) {
     final normalized = message.toLowerCase().trim().replaceAll(RegExp(r'\s+'), ' ');
@@ -194,7 +206,7 @@ class GeminiService {
         },
       };
 
-      final url = '$_baseUrl/models/${AppConstants.geminiModel}:generateContent?key=$_apiKey';
+      final url = '$_baseUrl/models/${RemoteConfigService().geminiModel}:generateContent?key=$_apiKey';
 
       final response = await http.post(
         Uri.parse(url),
@@ -215,6 +227,28 @@ class GeminiService {
         }
 
         return result;
+      } else if (response.statusCode == 429 && _apiKeys.length > 1) {
+        // Rate limited — try next key
+        final oldIndex = _currentKeyIndex;
+        _rotateKey();
+        if (_currentKeyIndex != oldIndex) {
+          debugPrint('Gemini: rate limited, retrying with key $_currentKeyIndex');
+          final retryUrl = '$_baseUrl/models/${RemoteConfigService().geminiModel}:generateContent?key=$_apiKey';
+          final retryResponse = await http.post(
+            Uri.parse(retryUrl),
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode(body),
+          );
+          if (retryResponse.statusCode == 200) {
+            final data = jsonDecode(retryResponse.body);
+            final text = data['candidates']?[0]?['content']?['parts']?[0]?['text'];
+            final result = text ?? 'I\'m having trouble responding right now. Let\'s try again.';
+            _cache[cKey] = _CacheEntry(result);
+            return result;
+          }
+        }
+        debugPrint('Gemini: all keys rate limited');
+        return _getFallbackResponse(coach, userMessage);
       } else {
         debugPrint('Gemini API error: ${response.statusCode} ${response.body}');
         return _getFallbackResponse(coach, userMessage);

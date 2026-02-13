@@ -1,7 +1,7 @@
 class AppConstants {
   AppConstants._();
 
-  static const String appName = 'CoachFlux';
+  static const String appName = 'AI CoachFlux';
   static const String appTagline = 'Become Who You\'re Meant To Be';
   static const String appMotto = 'Your Mind. Upgraded.';
   static const String appMission = '11 expert AI coaches. One goal: the best version of you.';
@@ -11,10 +11,14 @@ class AppConstants {
   static const String geminiModel = 'gemini-2.5-flash';
   static const String geminiBaseUrl = 'https://generativelanguage.googleapis.com/v1beta';
   // TODO: Move to env/secrets
-  static const String geminiApiKey = 'AIzaSyA1jZXrjeL_aMXopAzku2Qcvv0fjcRwo_8';
+  static const List<String> geminiApiKeys = [
+    'AIzaSyA1jZXrjeL_aMXopAzku2Qcvv0fjcRwo_8', // Primary
+    'AIzaSyCDy_xWXe3F5D7cBYjIW3hcloV7vBHhdQA', // Secondary
+  ];
+  static const String geminiApiKey = 'AIzaSyA1jZXrjeL_aMXopAzku2Qcvv0fjcRwo_8'; // legacy compat
 
   // RevenueCat
-  static const String rcAppleApiKey = 'appl_XXXXXXXXXX';
+  static const String rcAppleApiKey = 'appl_FLpanJEaekzoZngMDjtWwLbeBfA';
   static const String rcGoogleApiKey = 'goog_YOUR_REVENUECAT_GOOGLE_API_KEY';
   static const String rcPremiumEntitlement = 'pro';
   static const String rcCoachEntitlement = 'coach_tier';

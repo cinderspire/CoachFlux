@@ -19,6 +19,8 @@ import 'features/journal/screens/journal_screen.dart';
 import 'features/achievements/screens/achievements_screen.dart';
 import 'features/insights/screens/insights_screen.dart';
 import 'features/techniques/screens/techniques_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'core/services/remote_config_service.dart';
 import 'core/services/revenuecat_service.dart';
 import 'features/chat/screens/chat_screen.dart';
 import 'core/models/coach.dart';
@@ -41,6 +43,15 @@ final onboardingCompleteProvider = Provider<bool>((ref) {
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
+  // Initialize Firebase (graceful degradation if not configured)
+  try {
+    await Firebase.initializeApp();
+    await RemoteConfigService().init();
+  } catch (e) {
+    debugPrint('Firebase init skipped: $e — using defaults');
+  }
+
   final prefs = await SharedPreferences.getInstance();
 
   // Global error boundary for framework errors
@@ -89,7 +100,7 @@ class CoachFluxApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       navigatorKey: navigatorKey,
-      title: 'CoachFlux',
+      title: 'AI CoachFlux',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
       // BouncingScrollPhysics globally for iOS-like premium feel

@@ -431,56 +431,19 @@ class _HomeTabState extends State<_HomeTab> with TickerProviderStateMixin {
                             ],
                           ),
                         ),
-                        if (_streak > 0)
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                            decoration: BoxDecoration(
-                              gradient: AppColors.primaryGradient,
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Text('🔥', style: TextStyle(fontSize: 16)),
-                                const SizedBox(width: 4),
-                                Text('$_streak',
-                                    style: AppTextStyles.labelMedium.copyWith(
-                                      color: AppColors.backgroundDark,
-                                      fontWeight: FontWeight.bold,
-                                    )),
-                              ],
-                            ),
-                          ),
+                        // streak badge removed
                       ],
                     ),
                     const SizedBox(height: 16),
 
-                    // ── COMEBACK MESSAGE ──
-                    if (_comebackMessage != null && !_loading) ...[
-                      _ComebackCard(message: _comebackMessage!),
-                      const SizedBox(height: 16),
-                    ],
+                    // comeback removed
 
                     // ── DAILY TIP ──
                     if (_dailyTip != null && !_loading)
                       _DailyTipCard(tip: _dailyTip!),
                     if (_dailyTip != null && !_loading) const SizedBox(height: 16),
 
-                    // ── WEEKLY CHALLENGE ──
-                    if (_weeklyChallenge != null && !_loading) ...[
-                      _WeeklyChallengeCard(
-                        challenge: _weeklyChallenge!,
-                        onComplete: () async {
-                          await RetentionService().markChallengeDayComplete();
-                          _load();
-                        },
-                      ),
-                      const SizedBox(height: 16),
-                    ],
-
-                    // ── PROBLEM TOOLKIT ──
-                    if (_assessmentResults != null && _assessmentResults!.isNotEmpty && !_loading)
-                      ..._buildProblemToolkitCards(),
+                    // weekly challenge + problem toolkit removed
 
                     // ── QUICK START ──
                     if (_topCoachId != null && !_loading)
@@ -494,28 +457,7 @@ class _HomeTabState extends State<_HomeTab> with TickerProviderStateMixin {
                     _BookSessionCard(),
                     const SizedBox(height: 16),
 
-                    // ── CELEBRATION CARD ──
-                    if (_dailyPlan.isNotEmpty && _dailyPlanCompleted >= _dailyPlan.length) ...[
-                      _CelebrationCard(),
-                      const SizedBox(height: 16),
-                    ],
-
-                    // ── TODAY'S PLAN ──
-                    if (_dailyPlan.isNotEmpty) ...[
-                      _DailyPlanCard(
-                        plan: _dailyPlan,
-                        goalDone: _goalDone,
-                        completed: _dailyPlanCompleted,
-                        total: _dailyPlan.length,
-                        onToggle: _toggleGoalAction,
-                      ),
-                      const SizedBox(height: 16),
-                    ],
-
-                    // ── STREAK AT RISK ──
-                    if (_streakAtRisk && _streak > 0)
-                      _StreakRiskBanner(streak: _streak),
-                    if (_streakAtRisk && _streak > 0) const SizedBox(height: 16),
+                    // celebration + daily plan + streak risk removed
 
                     // ── YOUR GOALS ──
                     if (_goals.isNotEmpty) ...[
@@ -541,7 +483,7 @@ class _HomeTabState extends State<_HomeTab> with TickerProviderStateMixin {
                           config: GoalService().getConfig(goal),
                           todayAction: GoalService().getTodayAction(goal),
                           isDone: _goalDone[goal] ?? false,
-                          streak: _goalStreaks[goal] ?? 0,
+                          streak: 0, // streak disabled
                           progress: _goalProgress[goal] ?? 0,
                           onToggle: () => _toggleGoalAction(goal),
                           onExploreTechniques: () {
@@ -568,56 +510,9 @@ class _HomeTabState extends State<_HomeTab> with TickerProviderStateMixin {
                     ],
 
                     // ── MOOD SUMMARY ──
-                    if (_moodSummary != null) _IdentityCard(summary: _moodSummary!),
-                    if (_moodSummary != null) const SizedBox(height: 16),
+                    // mood summary removed
 
-                    // Transformation Journey Card
-                    GestureDetector(
-                      onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (_) => const TransformationScreen()),
-                      ),
-                      child: Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.all(20),
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              const Color(0xFF7C3AED).withValues(alpha: 0.2),
-                              AppColors.primaryPeach.withValues(alpha: 0.15),
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: const Color(0xFF7C3AED).withValues(alpha: 0.3)),
-                        ),
-                        child: Row(
-                          children: [
-                            const Text('🦋', style: TextStyle(fontSize: 36)),
-                            const SizedBox(width: 16),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('My Transformation',
-                                      style: AppTextStyles.titleSmall.copyWith(
-                                          color: AppColors.textPrimaryDark, fontWeight: FontWeight.bold)),
-                                  const SizedBox(height: 4),
-                                  Text('Track your psychological growth journey',
-                                      style: AppTextStyles.bodySmall.copyWith(color: AppColors.textSecondaryDark)),
-                                ],
-                              ),
-                            ),
-                            Icon(Icons.arrow_forward_ios, color: AppColors.textSecondaryDark.withValues(alpha: 0.5), size: 16),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-
-                    // Daily check-in
-                    _DailyCheckIn(),
+                    // transformation + daily check-in removed
                     const SizedBox(height: 24),
 
                     // Your Coaches
