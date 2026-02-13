@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../voice_call/screens/voice_call_screen.dart';
 import 'package:flutter/services.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/theme/app_colors.dart';
@@ -630,14 +631,26 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
               ),
               actions: [
                 IconButton(
-                  icon: const Icon(Icons.video_call_rounded,
-                      color: AppColors.primaryPeach),
-                  tooltip: 'Book Session',
+                  icon: const Icon(Icons.phone_rounded,
+                      color: AppColors.tertiarySage),
+                  tooltip: 'Voice Call',
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => BookAppointmentScreen(
+                      builder: (_) => VoiceCallScreen(
                           coach: widget.coach),
+                    ),
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.videocam_rounded,
+                      color: AppColors.primaryPeach),
+                  tooltip: 'Video Call',
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => VoiceCallScreen(
+                          coach: widget.coach, isVideoCall: true),
                     ),
                   ),
                 ),
